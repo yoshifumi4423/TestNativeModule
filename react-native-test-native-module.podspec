@@ -16,13 +16,13 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0", :tvos => "10.0" }
   s.source       = { :git => "https://github.com/yoshifumi4423/react-native-test-native-module.git", :tag => "#{s.version}" }
 
-  s.swift_version = '5.0'
-
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
 
+  s.swift_version = '5.0'
+  
   s.dependency "React"
-	s.dependency 'AFNetworking', '~> 3.0'
+	
   # s.dependency "..."
 end
 
